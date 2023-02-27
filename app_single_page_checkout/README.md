@@ -10,8 +10,8 @@
  In your cartridge path, include the cartridges in the following order:
 
  Administration > Sites > Manage Sites > RefArch – Settings
-    CartridgeS:app_single_page_checkout:app_storefront_base:modules
-## Add cartidge name i.e., app_single_page_checkout in cartrideConfig.json and compile js and scss.
+    CartridgeS:app_single_page_checkout:app_storefront_base:modules \
+   Add cartidge name i.e., app_single_page_checkout in cartrideConfig.json and compile js and scss.
   
 # Implement in store pick up
 
