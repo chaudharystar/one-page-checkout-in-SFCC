@@ -1,0 +1,77 @@
+@import "~baseScss/checkout/checkout";
+
+.data-checkout-stage {
+    // Initial states ------------------------
+    &[data-checkout-stage="customer"] {
+        .shipping-section {
+            display: none;
+        }
+
+        .card.ghost.customer {
+            display: none;
+        }
+
+        .card.customer-summary {
+            display: none;
+        }
+
+        .card.shipping-section {
+            display: none;
+        }
+
+        .card.payment-form {
+            display: none;
+        }
+
+        button.submit-customer {
+            display: block;
+        }
+
+        .payment {
+            display: none;
+        }
+    }
+
+    // Shipping ------------------------------
+    &[data-checkout-stage="single_page"] {
+        .customer-section {
+            display: none;
+        }
+
+        .card.payment-form {
+            // display: none;
+        }
+
+        button.submit-shipping {
+            display: block;
+        }
+
+        [data-address-mode="customer"] {
+            .shipping-address-block {
+                display: none;
+            }
+        }
+
+        [data-address-mode="shipment"] {
+            .shipping-address-form,
+            .billing-address,
+            .contact-info-phone {
+                display: none;
+            }
+        }
+
+        [data-address-mode="edit"] {
+            .shipping-address-block,
+            .billing-address {
+                display: none;
+            }
+        }
+
+        [data-address-mode="new"] {
+            .btn-show-details,
+            .btn-add-new {
+                display: none;
+            }
+        }
+    }
+}
